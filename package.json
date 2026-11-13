@@ -20,6 +20,14 @@
   ],
   "license": "MIT",
   "author": "Paolo Calosso",
+  "homepage": "https://github.com/paolocalosso/tabby-browser-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolocalosso/tabby-browser-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paolocalosso/tabby-browser-cli/issues"
+  },
   "peerDependencies": {
     "tabby-browser": ">=0.2.0"
   },
