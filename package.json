@@ -1,0 +1,48 @@
+{
+  "name": "tabby-browser-cli",
+  "version": "0.1.0",
+  "description": "Open URLs in tabby-browser tabs from the command line: tabby browse <url>",
+  "keywords": [
+    "tabby-plugin",
+    "browser",
+    "cli"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "webpack --node-env production --progress --color",
+    "watch": "webpack --node-env development --progress --color --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "shell"
+  ],
+  "license": "MIT",
+  "author": "Paolo Calosso",
+  "peerDependencies": {
+    "tabby-browser": ">=0.2.0"
+  },
+  "peerDependenciesMeta": {
+    "tabby-browser": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "@angular/forms": "^12.2.0",
+    "@angular/platform-browser": "^12.2.0",
+    "@angular/animations": "^12.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^11.0.0",
+    "@types/node": "^16.18.126",
+    "@types/webpack-env": "^1.18.0",
+    "rxjs": "^7.4.0",
+    "tabby-core": "1.0.231-nightly.0",
+    "ts-loader": "^9.0.0",
+    "typescript": "^4.9.5",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "zone.js": "^0.11.5"
+  }
+}
